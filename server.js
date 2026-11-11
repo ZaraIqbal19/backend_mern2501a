@@ -6,6 +6,9 @@ var mongoserver = new MongoClient(process.env.MONGO_URL)
 server.get('/dashboard',async(req,res) => {
     res.json({"Message":"Hello World"})
 })
+server.get('/admin',async(req,res) => {
+    res.json({"Message":"Hello Admin"})
+})
 
 
 server.listen(process.env.PORT)
